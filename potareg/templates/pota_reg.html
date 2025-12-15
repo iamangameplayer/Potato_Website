@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html lang="en">
+
+
+<head>
+    <title>Potato  Baby!!!</title>
+<style>
+    .Ab{
+
+        color: brown;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .A{
+        color:rgb(13, 5, 255);
+        font-size: 199%;
+        margin: 20px;
+    }
+
+    .pf{
+        font-size: larger;
+        display: grid;
+        grid-template-columns: 500px;
+        gap: 5px;
+        color:rgb(0, 0, 0);
+    }
+
+    body{
+        background-image: url("Potato.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+</head>
+<body>
+
+    <div class="Ab">
+    <h1 >This is a Website dedicated to register different types of potatoes</h1>
+    </div>
+
+    <div class="A">
+    <h1>Potatoes are one the best things in the entire world</h1>
+    <p>Shoutout to God who created Potatoes</p>
+    </div>
+
+    <form class="pf"  method="POST">
+
+        {% csrf_token %}
+
+
+
+
+        <label >Potato Size</label>
+        <input name="PotaSize" type="text">
+        <br>
+
+        <label>Potato Cost</label>
+        <input name="PotaCost" type="number">
+        <br>
+
+        <label>Potato Birthday</label>
+        <input name="PotaBirth" type="date">
+        <br>
+
+        <label>Potato Name</label>
+        <input name="PotaName"type="text">
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+
+</html>
