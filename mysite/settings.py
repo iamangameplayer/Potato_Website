@@ -79,7 +79,7 @@ DATABASES = {
     'default': dj_database_url.config(
 
         default=os.environ.get('DATABASE_URL',
-                               'postgres://postgres:8125888277@locahost:5432/poato')
+                               'postgres://postgres:8125888277@locahost:5432/potato')
         )
 
 }
